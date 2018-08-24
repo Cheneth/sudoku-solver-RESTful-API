@@ -4,6 +4,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Solution {
+	
+	//a solution contains the solution to a given puzzle (if a puzzle was unsolvable it will have the 
+	//property of solvable as false, therefore the value of the solution will be disregarded)
+	
 	private String solution;
 	private boolean solvable;
 	

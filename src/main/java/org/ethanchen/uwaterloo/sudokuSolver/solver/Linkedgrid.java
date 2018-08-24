@@ -107,7 +107,7 @@ public class Linkedgrid {
 			while(marker != null){
 				
 				if(intake[count] > 0){
-					//marker.setValue(intake[count] - 1);
+					
 					boolean[] poss = {false, false, false, false, false, false, false, false, false};
 					poss[intake[count]-1] = true;
 					marker.setData(poss);
