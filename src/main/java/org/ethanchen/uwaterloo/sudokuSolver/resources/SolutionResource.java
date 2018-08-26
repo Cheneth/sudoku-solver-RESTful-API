@@ -13,9 +13,9 @@ import org.ethanchen.uwaterloo.sudokuSolver.solver.SolutionUtility;
 
 @Path("/solver")
 public class SolutionResource {//takes get requests with path /solver/{puzzle} then returns solved puzzle in JSON format
-	@GET
-	@Path("/{puzzle}")
-	@Produces(MediaType.APPLICATION_JSON)
+	@GET //specify type of HTTP request methods
+	@Path("/{puzzle}") //URL extension (within the brackets becomes the variable puzzle in getSolution().)
+	@Produces(MediaType.APPLICATION_JSON) //type of data returned
 	public Solution getSolution(@PathParam("puzzle") String incomingPuzzle){
 	//	String input = ""+incomingPuzzle;
 		
